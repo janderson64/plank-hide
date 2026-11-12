@@ -2926,6 +2926,85 @@ details-disclosure > details {
   position: relative;
 }
 
+@media screen and (min-width: 990px) {
+  .section-header,
+  sticky-header,
+  .header-wrapper,
+  .header,
+  .header__inline-menu {
+    overflow: visible;
+  }
+
+  .header__inline-menu > .list-menu > li > header-menu {
+    display: block;
+  }
+
+  .header__inline-menu > .list-menu > li > header-menu > details {
+    width: max-content;
+  }
+
+  .header__inline-menu header-menu > details > .header__submenu.list-menu--disclosure {
+    top: 0;
+    left: calc(100% - 0.6rem);
+    right: auto;
+    margin: 0;
+    z-index: 3;
+  }
+
+  .header__inline-menu details[open] > .header__submenu {
+    z-index: 3;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .js .header__inline-menu details > .header__submenu {
+      transform: translateX(-0.8rem);
+    }
+
+    .header__inline-menu details[open] > .header__submenu {
+      animation-name: animateHeaderFlyout;
+    }
+  }
+
+  .header__inline-menu .header__submenu details {
+    position: relative;
+  }
+
+  .header__inline-menu .header__submenu details > .header__submenu {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 0.6rem);
+    margin: 0;
+    min-width: 20rem;
+    width: max-content;
+    padding: 1rem 0;
+    background-color: rgb(var(--color-background));
+    border: 1px solid rgba(var(--color-foreground), 0.2);
+    border-radius: var(--popup-corner-radius);
+    box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
+    z-index: 4;
+  }
+
+  .header__inline-menu header-menu > details > .header__menu-item .icon-caret,
+  .header__inline-menu .header__submenu .icon-caret,
+  .header__inline-menu details[open] > .header__menu-item .icon-caret {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes animateHeaderFlyout {
+  0% {
+    opacity: 0;
+    transform: translateX(-0.8rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes animateMenuOpen {
   0% {
     opacity: 0;
