@@ -1109,6 +1109,9 @@
             "label": "Drawer"
           }
         },
+        "menu_font_size": {
+          "label": "Menu text size"
+        },
         "show_line_separator": {
           "label": "Separator line"
         },

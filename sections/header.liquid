@@ -62,13 +62,10 @@
   }
 
   .header__inline-menu > .list-menu > li > .header__menu-item,
-  .header__inline-menu > .list-menu > li > header-menu > details > .header__menu-item {
-    font-size: 2rem;
-  }
-
+  .header__inline-menu > .list-menu > li > header-menu > details > .header__menu-item,
   .menu-drawer__navigation > .menu-drawer__menu > li > .menu-drawer__menu-item,
   .menu-drawer__navigation > .menu-drawer__menu > li > details > .menu-drawer__menu-item {
-    font-size: 2.2rem;
+    font-size: {{ section.settings.menu_font_size | default: 20 }}px;
   }
 
   .header__icon--cart {
@@ -584,6 +581,16 @@
       ],
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "menu_font_size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.header.settings.menu_font_size.label",
+      "default": 20
     },
     {
       "type": "select",

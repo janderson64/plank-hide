@@ -42,6 +42,7 @@
         "mobile_logo_position": "center",
         "menu": "shop-by-category",
         "menu_type_desktop": "dropdown",
+        "menu_font_size": 20,
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
