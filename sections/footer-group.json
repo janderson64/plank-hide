@@ -54,17 +54,17 @@
             "subtext": "<p><a href=\"https://maps.app.goo.gl/44bRSN7qqUda5g536\" target=\"_blank\" title=\"https://maps.app.goo.gl/44bRSN7qqUda5g536\">2721A East Sharon Road<br/>Cincinnati Ohio 45241 USA</a></p><p><a href=\"tel:8884626852\" title=\"tel:8884626852\">Tel: 888-462-6852</a></p><p><a href=\"mailto:info@PlankandHide.com\" title=\"mailto:info@PlankandHide.com\">info@PlankandHide.com</a><br/></p>"
           }
         },
-        "text_xhhJPk": {
-          "type": "text",
+        "link_list_FcFKpr": {
+          "type": "link_list",
           "settings": {
-            "heading": "",
-            "subtext": ""
+            "heading": "Quick links",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
         "text_w8F8dg",
-        "text_xhhJPk"
+        "link_list_FcFKpr"
       ],
       "settings": {
         "color_scheme": "scheme-4",
